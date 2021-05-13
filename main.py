@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
-bot = discord.client()
+bot = discord.Client()
 
 @bot.event
 async def on_message(message):
